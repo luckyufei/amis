@@ -73,6 +73,10 @@ export default defineConfig({
         replacement: path.resolve(__dirname, './packages/amis-formula/src')
       },
       {
+        find: 'node_modules/amis-ui/scss',
+        replacement: path.resolve(__dirname, './packages/amis-ui/scss')
+      },
+      {
         find: 'amis-ui/lib',
         replacement: path.resolve(__dirname, './packages/amis-ui/src')
       },
