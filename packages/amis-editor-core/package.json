@@ -44,7 +44,8 @@
   "files": [
     "lib",
     "esm",
-    "static"
+    "static",
+    "scss"
   ],
   "dependencies": {
     "amis-theme-editor-helper": "*",
@@ -57,9 +58,12 @@
     "mobx-state-tree": "^3.17.3",
     "react-frame-component": "^5.2.6",
     "react-json-view": "^1.21.3",
-    "sortablejs": "^1.14.0"
+    "sortablejs": "^1.14.0",
+    "match-sorter": "^6.3.1",
+    "prop-types": "^15.6.1"
   },
   "devDependencies": {
+    "@types/prop-types": "^15.5.2",
     "@fortawesome/fontawesome-free": "^6.1.1",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-json": "^4.1.0",

@@ -18,6 +18,7 @@
     }
   },
   "devDependencies": {
+    "@types/json-schema": "^7.0.11",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^14.1.0",
@@ -51,13 +52,16 @@
     "test": "jest",
     "update-snapshot": "jest --updateSnapshot",
     "coverage": "jest --coverage",
-    "clean-dist": "rimraf lib/** esm/**"
+    "clean-dist": "rimraf lib/** esm/**",
+    "tscheck": "tsc --noEmit",
+    "tsbuild": "rimraf tsconfig.tsbuildinfo && tsc --project tsconfig.json --declaration --emitDeclarationOnly"
   },
   "files": [
     "lib",
     "esm"
   ],
   "dependencies": {
+    "@types/lodash": "^4.17.7",
     "@rc-component/mini-decimal": "^1.0.1",
     "amis-formula": "*",
     "classnames": "2.3.2",
@@ -77,7 +81,8 @@
     "react-json-view": "1.21.3",
     "react-overlays": "5.1.1",
     "tslib": "^2.3.1",
-    "uncontrollable": "7.2.1"
+    "uncontrollable": "7.2.1",
+    "react-is": "^18.3.1"
   },
   "peerDependencies": {
     "amis-formula": "*",

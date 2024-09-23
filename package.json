@@ -44,10 +44,38 @@
     ]
   },
   "dependencies": {
-    "path-to-regexp": "^6.2.0",
     "postcss": "^8.4.14",
     "qs": "6.9.7",
-    "tslib": "^2.8.1"
+    "tslib": "^2.8.1",
+    "axios": "0.25.0",
+    "classnames": "2.3.1",
+    "copy-to-clipboard": "3.3.1",
+    "core-js": "^3.21.0",
+    "cropperjs": "1.5.12",
+    "css": "3.0.0",
+    "echarts": "5.3.3",
+    "exceljs": "^4.3.0",
+    "history": "^4.7.2",
+    "immutability-helper": "^3.1.1",
+    "mobx": "^4.5.0",
+    "mobx-react": "^6.3.1",
+    "mobx-state-tree": "^3.17.3",
+    "moment": "^2.19.4",
+    "monaco-editor": "0.30.1",
+    "papaparse": "^5.3.0",
+    "path-to-regexp": "^6.2.0",
+    "prismjs": "^1.28.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-overlays": "5.1.1",
+    "react-router": "5.2.1",
+    "react-router-dom": "5.3.0",
+    "sortablejs": "1.14.0",
+    "zrender": "^5.3.2",
+    "rc-overflow": "^1.2.4",
+    "lodash": "^4.17.15",
+    "video-react": "0.15.0",
+    "@fortawesome/fontawesome-free": "^6.1.1"
   },
   "devDependencies": {
     "@babel/generator": "^7.22.9",
@@ -115,6 +143,8 @@
     "ts-jest": "^29.0.2",
     "typescript-eslint": "^8.19.1",
     "vite": "^4.3.9",
+    "esbuild": "0.18.20",
+    "vite-plugin-html": "^3.2.0",
     "vite-plugin-monaco-editor": "^1.1.0",
     "vite-plugin-svgr": "^2.2.2",
     "zrender": "^5.3.2"
@@ -162,6 +192,28 @@
     "snapshotFormat": {
       "escapeString": false,
       "printBasicPrototype": false
+    },
+    "pnpm": {
+      "overrides": {
+        "amis": "workspace:*",
+        "amis-core": "workspace:*",
+        "amis-formula": "workspace:*",
+        "amis-ui": "workspace:*",
+        "amis-editor": "workspace:*",
+        "amis-editor-core": "workspace:*",
+        "amis-theme-editor-helper": "workspace:*",
+        "office-viewer": "workspace:*",
+        "mobx": "4.15.7",
+        "moment": "2.29.4",
+        "monaco-editor": "0.33.0",
+        "postcss": "^8.4.14",
+        "rc-input-number": "7.3.4",
+        "react-dom": "18.2.0",
+        "react-json-view": "1.21.3",
+        "react-router-dom": "5.3.0",
+        "react-router": "5.2.1",
+        "react": "18.2.0"
+      }
     }
   }
 }
