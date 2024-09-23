@@ -73,7 +73,11 @@
     "sortablejs": "1.15.0",
     "tslib": "^2.3.1",
     "video-react": "0.15.0",
-    "xlsx": "^0.18.5"
+    "xlsx": "^0.18.5",
+    "codemirror": "^5.63.0",
+    "froala-editor": "3.1.1",
+    "tinymce": "^6.1.2",
+    "cropperjs": "1.5.12"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
