@@ -84,6 +84,10 @@ export default defineConfig({
         replacement: path.resolve(__dirname, './packages/amis-ui/src')
       },
       {
+        find: 'amis-ui/scss',
+        replacement: path.resolve(__dirname, './packages/amis-ui/scss')
+      },
+      {
         find: 'amis-ui',
         replacement: path.resolve(__dirname, './packages/amis-ui/src')
       },
