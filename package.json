@@ -13,8 +13,9 @@
     "fis3-serve": "fis3 server start --www ./public --port 8888 --no-daemon --no-browse",
     "fis3": "concurrently --restart-tries -1 npm:fis3-serve npm:fis3-dev",
     "fis3-stop": "fis3 server stop",
-    "start": "vite",
+    "start": "vite dev",
     "fis3-dev": "fis3 release -cwd ./public",
+    "dev:editor": "pnpm --filter=amis-editor-demo run dev",
     "deploy-gh-page": "sh ./deploy-gh-pages.sh",
     "build": "npm run build --workspaces",
     "build-esm": "npm run build-esm --workspaces",
@@ -38,9 +39,6 @@
   "lint-staged": {
     "{packages,examples}/**/{src,examples}/**/**/*.{tsx,jsx,ts,scss}": [
       "prettier --write"
-    ],
-    "*.{scss}": [
-      "stylelint --fix"
     ]
   },
   "dependencies": {
@@ -75,7 +73,8 @@
     "rc-overflow": "^1.2.4",
     "lodash": "^4.17.15",
     "video-react": "0.15.0",
-    "@fortawesome/fontawesome-free": "^6.1.1"
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "json5": "^2.2.1"
   },
   "devDependencies": {
     "@babel/generator": "^7.22.9",

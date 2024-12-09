@@ -1,7 +1,6 @@
-@use 'sass:color';
-@import 'node_modules/amis-ui/scss/mixins';
-@import 'node_modules/amis-ui/scss/functions';
-@import 'node_modules/amis-ui/scss/variables';
+@import 'amis-ui/scss/mixins';
+@import 'amis-ui/scss/functions';
+@import 'amis-ui/scss/variables';
 
 body {
   background-color: #fff !important;
@@ -56,7 +55,7 @@ body {
   bottom: 0;
   margin-left: -2px;
   width: 4px;
-  background: color.adjust($dark, $lightness: 20%);
+  background: gray;
   z-index: 1;
   cursor: col-resize;
 
